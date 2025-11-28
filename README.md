@@ -2,10 +2,10 @@
 
 TypeScript typings for the Fandom & MediaWiki APIs.
 
-- ✔ MediaWiki REST API (v1)
-- ✔ MediaWiki Action API
-- ✔ Fandom-specific endpoints
-- ✔ Zero-runtime, clean type exports
+- MediaWiki REST API (v1)
+- MediaWiki Action API
+- Fandom-specific endpoints
+- Zero-runtime, clean type exports
 
 Inspired by `discord-api-types`, this package provides a stable,
 versioned type layer for building API clients and tooling.
