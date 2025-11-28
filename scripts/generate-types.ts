@@ -1,3 +1,8 @@
+/**
+ * Script to generate TypeScript types from live API responses.
+ * Fetches data from a real wiki and infers JSON schemas to generate TypeScript interfaces.
+ */
+
 import fs from "fs";
 import path from "path";
 import fetch from "node-fetch";
@@ -15,7 +20,10 @@ if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 const wikiBase = "https://minecraft.fandom.com";
 
 /**
- * Helper to infer JSON Schema from data
+ * Helper to infer JSON Schema from data.
+ * Recursively analyzes the structure of the input data to create a compatible JSON schema.
+ * @param data - The data to infer schema from
+ * @returns The inferred JSON schema object
  */
 function inferSchema(data: any): any {
   if (data === null) return { type: "null" };

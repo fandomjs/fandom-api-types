@@ -1,3 +1,7 @@
+/**
+ * Exports types for MediaWiki REST API v1.
+ */
+
 export interface MWRestApiInfo {
   /** The version of the MediaWiki REST API */
   version: 1;

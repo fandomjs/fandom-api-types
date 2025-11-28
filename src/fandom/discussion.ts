@@ -1,3 +1,10 @@
+/**
+ * Types for Fandom's Discussion API.
+ */
+
+/**
+ * Represents a single post in a discussion thread.
+ */
 export interface FandomDiscussionPost {
   id: string;
   threadId: string;
@@ -9,6 +16,9 @@ export interface FandomDiscussionPost {
   replyTo?: string; // parent post id
 }
 
+/**
+ * Represents a discussion thread containing multiple posts.
+ */
 export interface FandomDiscussionThread {
   id: string;
   title: string;
@@ -17,6 +27,9 @@ export interface FandomDiscussionThread {
   lastPostAt: string;
 }
 
+/**
+ * Represents the response containing discussion threads.
+ */
 export interface FandomDiscussionResponse {
   threads: FandomDiscussionThread[];
   total: number;

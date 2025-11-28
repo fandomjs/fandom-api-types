@@ -1,3 +1,10 @@
+/**
+ * Types for MediaWiki REST API Revision endpoints.
+ */
+
+/**
+ * Represents a full revision object.
+ */
 export interface MWRevision {
   id: number;
   timestamp: string; // ISO 8601
@@ -7,6 +14,9 @@ export interface MWRevision {
   content?: string; // full revision content
 }
 
+/**
+ * Represents the response containing a list of revisions.
+ */
 export interface MWRevisionsResponse {
   items: MWRevision[];
   total: number;

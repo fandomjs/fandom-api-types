@@ -1,3 +1,10 @@
+/**
+ * Types for Fandom's User API.
+ */
+
+/**
+ * Represents a Fandom user.
+ */
 export interface FandomUser {
   id: string;
   name: string;
@@ -8,6 +15,9 @@ export interface FandomUser {
   karma?: number;
 }
 
+/**
+ * Represents the response containing a list of users.
+ */
 export interface FandomUsersResponse {
   items: FandomUser[];
   total: number;

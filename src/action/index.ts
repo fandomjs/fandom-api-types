@@ -1,3 +1,7 @@
+/**
+ * Exports types for MediaWiki Action API.
+ */
+
 export type { MWQueryResponse, MWQueryResult, MWQueryPage } from "./query.js";
 export type { MWRevision, MWRevisionsResponse } from "./revisions.js";
 export type { MWParseResponse } from "./parse.js";

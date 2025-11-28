@@ -1,3 +1,8 @@
+/**
+ * Basic type checking tests to ensure generated types are exported correctly.
+ * This file is not meant to be run as a unit test suite, but rather to verify type compilation.
+ */
+
 import { Generated } from "../src/index.js";
 
 // Test that types are exported and usable

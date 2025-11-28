@@ -1,3 +1,7 @@
+/**
+ * Exports types for Fandom-specific APIs.
+ */
+
 export type {
   FandomArticleDetails,
   FandomArticlesResponse,

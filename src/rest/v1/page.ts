@@ -1,5 +1,10 @@
-// Represents a page object returned by MediaWiki REST API v1
+/**
+ * Types for MediaWiki REST API Page endpoints.
+ */
 
+/**
+ * Represents a page object from the REST API.
+ */
 export interface MWRestPage {
   id: number;
   key: string;
@@ -9,6 +14,9 @@ export interface MWRestPage {
   content?: string; // optional content
 }
 
+/**
+ * Represents a summary of a page revision.
+ */
 export interface MWRevisionSummary {
   id: number;
   timestamp: string; // ISO 8601

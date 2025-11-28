@@ -1,3 +1,10 @@
+/**
+ * Types for Fandom's Activity Feeds API.
+ */
+
+/**
+ * Represents an item in the activity feed.
+ */
 export interface FandomFeedItem {
   id: string;
   title: string;
@@ -8,6 +15,9 @@ export interface FandomFeedItem {
   author?: string;
 }
 
+/**
+ * Represents the response containing a list of feed items.
+ */
 export interface FandomFeedsResponse {
   items: FandomFeedItem[];
   total: number;

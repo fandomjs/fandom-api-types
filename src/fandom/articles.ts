@@ -1,3 +1,10 @@
+/**
+ * Types for Fandom's Articles API.
+ */
+
+/**
+ * Represents detailed information about a Fandom article.
+ */
 export interface FandomArticleDetails {
   id: number;
   title: string;
@@ -9,6 +16,9 @@ export interface FandomArticleDetails {
   abstract?: string;
 }
 
+/**
+ * Represents the response containing a list of article details.
+ */
 export interface FandomArticlesResponse {
   items: FandomArticleDetails[];
   total: number;

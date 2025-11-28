@@ -1,3 +1,10 @@
+/**
+ * Types for the MediaWiki Action API 'revisions' property.
+ */
+
+/**
+ * Represents a single revision of a page.
+ */
 export interface MWRevision {
   revid: number;
   parentid?: number;
@@ -9,6 +16,9 @@ export interface MWRevision {
   timestamp: string; // ISO 8601
 }
 
+/**
+ * Represents the response when querying for revisions.
+ */
 export interface MWRevisionsResponse {
   batchcomplete?: string;
   query?: {

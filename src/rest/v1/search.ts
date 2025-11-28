@@ -1,5 +1,10 @@
-// Represents search results from MediaWiki REST API v1
+/**
+ * Types for MediaWiki REST API Search endpoints.
+ */
 
+/**
+ * Represents a single search result.
+ */
 export interface MWSearchResult {
   id: number;
   key: string;
@@ -9,6 +14,9 @@ export interface MWSearchResult {
   url: string;
 }
 
+/**
+ * Represents the response containing search results.
+ */
 export interface MWSearchResponse {
   items: MWSearchResult[];
   total: number;
