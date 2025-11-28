@@ -1,0 +1,55 @@
+{
+  "name": "fandom-api-types",
+  "version": "0.0.1",
+  "description": "TypeScript definitions for the Fandom + MediaWiki APIs.",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fandomjs/fandom-api-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fandomjs/fandom-api-types/issues"
+  },
+  "homepage": "https://github.com/fandomjs/fandom-api-types#readme",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "clean": "rimraf dist",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "generate-types": "tsx scripts/generate-types.ts",
+    "test": "tsx test/types.test.ts",
+    "prepublishOnly": "npm run generate-types && npm run build"
+  },
+  "keywords": [
+    "fandom",
+    "mediawiki",
+    "types",
+    "api",
+    "typescript",
+    "rest"
+  ],
+  "author": "fandom.js contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "json-schema-to-typescript": "^15.0.4",
+    "node-fetch": "^3.3.2",
+    "prettier": "^3.7.1",
+    "rimraf": "^6.1.2",
+    "tsup": "^8.5.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.6.0"
+  }
+}
